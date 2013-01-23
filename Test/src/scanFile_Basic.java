@@ -11,5 +11,6 @@ public class scanFile_Basic{
 		while(file.hasNext()){
 			System.out.println(file.nextLine());
 		}
+
 	}
 }
