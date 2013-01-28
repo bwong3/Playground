@@ -84,7 +84,7 @@ public class scanFile_CommandLine{
 			
 			//The length of the message needs to be checked
 			if (container.length() % 5 != 0){
-				System.out.print("Error: Your message was not a multiple of 5 in length!.");
+				System.err.print("Error: Your message was not a multiple of 5 in length!.");
 				System.exit(1);
 			}
 		}
@@ -140,9 +140,11 @@ public class scanFile_CommandLine{
 		System.out.println();
 		derp.tripleCut(list);
 		
-	/*	System.out.println();
+		System.out.println();
+		derp.countDown(list);
+		System.out.println();
 		
 		for (int x = 0; x < 28; x++)
-			System.out.print(list.get(x) + " ");*/
+			System.out.print(list.get(x) + " ");
 	}
 }

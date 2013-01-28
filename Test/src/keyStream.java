@@ -13,7 +13,30 @@ public class keyStream {
 			return;
 		}
 		else{
+			int[] toBeMoved = new int[value];
+			int[] stationary = new int[27 - value];
+			int i = 0;
+			int j = 0;
+			while(i < value){
+				toBeMoved[i] = list.get(i);
+				System.out.print(toBeMoved[i] + " ");
+				i++;
+			}
+			System.out.println();
+			while(i < 27){
+				stationary[j] = list.get(i);
+				System.out.print(stationary[j] + " ");
+				i++;
+				j++;
+			}
+			System.out.println();
 			
+			for (i = 0; i < stationary.length; i++)
+				list.set(i, stationary[i]);
+			for (j = 0; j < toBeMoved.length; j++){
+				list.set(i, toBeMoved[j]);
+				i++;
+			}
 		}
 	}
 	
