@@ -122,29 +122,14 @@ public class scanFile_CommandLine{
 			checkMessage(messageFile);
 		}
 		
-		for (int x = 0; x < 28; x++)
-			System.out.print(list.get(x) + " ");
-		
 		derp.moveJokerA(list);
-		System.out.println();
-		
-		for (int x = 0; x < 28; x++)
-			System.out.print(list.get(x) + " ");
 		
 		derp.moveJokerB(list);
-		System.out.println();
-		
-		for (int x = 0; x < 28; x++)
-			System.out.print(list.get(x) + " ");
-		
-		System.out.println();
+	
 		derp.tripleCut(list);
 		
-		System.out.println();
 		derp.countDown(list);
-		System.out.println();
 		
-		for (int x = 0; x < 28; x++)
-			System.out.print(list.get(x) + " ");
+		System.out.print(derp.grabKeyStream(list));
 	}
 }

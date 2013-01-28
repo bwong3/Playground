@@ -2,16 +2,20 @@ import java.util.LinkedList;
 
 public class keyStream {
 	public keyStream() {
-
+	}
+	
+	public static int grabKeyStream(LinkedList<Integer> list){
+		int grab = list.getFirst();
+		
+		return list.get(grab);
 	}
 
 	public static void countDown(LinkedList<Integer> list){
 		int value = list.getLast();
 		
 		//in case it is JB, make the value 27
-		if (value == 28 || value == 27){
+		if (value == 28 || value == 27)
 			return;
-		}
 		else{
 			int[] toBeMoved = new int[value];
 			int[] stationary = new int[27 - value];
